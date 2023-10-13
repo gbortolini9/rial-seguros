@@ -1,0 +1,90 @@
+@charset "UTF0-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --azul: #0318FD;
+    --azul-escuro: #1228A6;
+    --verde: #4CD90B;
+}
+
+.header {
+    margin: auto;
+    max-width: 1800px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: var(--verde);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 600px;
+    animation: bgcolor infinite 20s;
+}
+
+.line {
+    background-color: var(--azul-escuro);
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 1em;
+}
+
+main h1 {
+   text-align: center;
+   color: white;
+   margin-top: 60px;
+   text-shadow: 2px 4px 6px #000000b8;
+   font-size: 2.1em;
+
+}
+
+@keyframes bgcolor {
+    0% {
+        background-image: url(img/jess-zoerb-tvuTAZS_0xk-unsplash\ \(1\).jpg);
+        background-position: bottom;
+    }
+
+    40% {
+        background-image: url(img/everton-vila-AsahNlC0VhQ-unsplash.jpg);
+        background-position: bottom;
+    }
+
+    60% {
+        background-image: url(img/derek-thomson-M1jCmRxO7cY-unsplash.jpg);
+        background-position: center;
+    }
+
+    100% {
+        background-image: url(img/kevin-gent-DIZBFTl7c-A-unsplash.jpg);
+        background-position: center;
+    }
+}
