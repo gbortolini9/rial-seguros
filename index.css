@@ -3,53 +3,78 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 :root {
-    --azul: #0318FD;
+    --azul: #0318fc;
     --azul-escuro: #1228A6;
-    --verde: #4CD90B;
-}
-
-.header {
-    margin: auto;
-    max-width: 1800px;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
+    --verde: #3ed108;
 }
 
 .logo {
     width: 200px;
 }
 
-nav {
-    display: flex;
-    gap: 10px;
-}
-
-nav a {
+a {
     color: var(--verde);
     text-decoration: none;
-    font-size: 1.5em;
-}
-
-nav a:hover {
+  }
+  
+  a:hover {
     text-decoration: underline;
-}
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    height: 80px;
+    margin: auto;
+    max-width: 1800px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--verde);
+    margin: 8px;
+    transition: 0.3s;
+  }
 
-main {
+.banner {
     background-position: bottom;
     background-attachment: fixed;
-    height: 600px;
+    background-repeat: no-repeat;
+    height: 70vh;
     animation: bgcolor infinite 20s;
 }
 
 .line {
-    background-color: var(--azul-escuro);
+    background-image: linear-gradient(to right, var(--azul), var(--azul-escuro) );
     height: 35px;
     display: flex;
     justify-content: center;
@@ -58,7 +83,7 @@ main {
     font-size: 1em;
 }
 
-main h1 {
+.banner h1 {
    text-align: center;
    color: white;
    margin-top: 60px;
