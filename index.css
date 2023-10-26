@@ -16,12 +16,13 @@
 
 .topo-redes-sociais {
   width: 100%;
-  background-color: #222222;
+  background-color: white;
 }
 
 .topo-redes-sociais img {
   width: 20px;
   padding: 5px 5px 0 5px;
+  margin-top: 5px;
 }
 
 .icone-topo {
@@ -31,37 +32,41 @@
   gap: 15px;
 }
 
+.icone-topo a {
+  border: 1px solid white;
+}
+
 .icone-topo a:hover {
-  background-color: #393939bf;
+  border-bottom: 1px solid var(--verde);
+  transition-duration: 0.5s;
 }
 
 .logo {
     width: 200px;
+    padding: 40px;
 }
 
 a {
     color: var(--verde);
     text-decoration: none;
   }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+
+a:hover {
+  color: #2d9108;
+  font-weight: bold;
+}
   
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
     height: 80px;
     margin: auto;
     max-width: 1800px;
+  }
+
+  .logo {
+    width: 300px;
   }
   
   .nav-list {
