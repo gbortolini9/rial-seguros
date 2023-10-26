@@ -116,6 +116,7 @@ a {
 
 main {
   background-image: url(img/rial_back.png);
+  background-attachment: fixed;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -160,4 +161,8 @@ strong {
 
 .topico-01, .topico-02, .topico-03, .topico-04 {
   visibility: hidden;
+}
+
+footer {
+
 }
