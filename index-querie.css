@@ -80,3 +80,9 @@
     justify-content: center;
   }
 }
+
+@media(max-width: 723px) {
+  .rodape {
+    flex-wrap: wrap;
+  }
+}
