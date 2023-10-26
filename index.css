@@ -113,3 +113,47 @@ a {
         background-position: center;
     }
 }
+
+main {
+  background-image: url(img/rial_back.png);
+  background-position: top;
+  display: flex;
+  justify-content: center;
+
+}
+
+.conteudo-principal {
+  max-width: 1100px;
+  padding: 100px 30px;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--azul-escuro);
+  font-size: 1.7em;
+}
+
+strong {
+  color: var(--verde);
+}
+
+.texto-conteudo-principal {
+  margin: 15px 0;
+  font-size: 1.4em;
+}
+
+.topico-02 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.topico-02 img {
+  width: 250px;
+}
+
+.topico-02-txt {
+  display: flex;
+  flex-direction: column;
+}
