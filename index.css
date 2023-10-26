@@ -187,7 +187,7 @@ strong {
   width: 300px;
 }
 
-.topico-01, .topico-02, .topico-03, .topico-04 {
+.topico-01, .topico-02, .topico-03, .topico-04, .line-p {
   visibility: hidden;
 }
 
@@ -205,7 +205,7 @@ footer {
 }
 
 .logo-rodape {
-  width: 500px;
+  width: 400px;
 }
 
 .lista-rodape {
@@ -215,4 +215,8 @@ footer {
 
 .a-rodape {
   color: white;
+}
+
+.a-rodape:hover {
+  color: var(--verde);
 }
