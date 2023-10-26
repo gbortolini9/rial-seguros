@@ -41,11 +41,6 @@
   transition-duration: 0.5s;
 }
 
-.logo {
-    width: 200px;
-    padding: 40px;
-}
-
 a {
     color: var(--verde);
     text-decoration: none;
@@ -67,6 +62,7 @@ a:hover {
 
   .logo {
     width: 300px;
+    padding: 40px;
   }
   
   .nav-list {
@@ -109,6 +105,7 @@ a:hover {
     align-items: center;
     color:white;
     font-size: 1em;
+    margin-top: 10px;
 }
 
 .banner h1 {
