@@ -21,7 +21,7 @@
 
 .topo-redes-sociais img {
   width: 20px;
-  padding: 5px;
+  padding: 5px 5px 0 5px;
 }
 
 .icone-topo {
@@ -29,6 +29,10 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+}
+
+.icone-topo a:hover {
+  background-color: #393939bf;
 }
 
 .logo {
