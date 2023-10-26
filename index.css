@@ -12,6 +12,12 @@
     --verde: #3ed108;
 }
 
+.topo-redes-sociais {
+  height: 30px;
+  width: 100%;
+  background-color: #222222;
+}
+
 .logo {
     width: 200px;
 }
