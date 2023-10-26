@@ -142,18 +142,22 @@ strong {
   font-size: 1.4em;
 }
 
-.topico-02 {
+.topico-01 {
+  display: flex;
+  flex-direction: column;
+}
+
+.topico-02, .topico-03, .topico-04 {
   display: flex;
   align-items: center;
   gap: 20px;
   padding-top: 100px;
 }
 
-.topico-02 img {
+.img-conteudo-principal {
   width: 250px;
 }
 
-.topico-02-txt {
-  display: flex;
-  flex-direction: column;
+.topico-01, .topico-02, .topico-03, .topico-04 {
+  visibility: hidden;
 }

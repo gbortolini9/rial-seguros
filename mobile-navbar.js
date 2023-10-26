@@ -42,3 +42,13 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+  window.sr = ScrollReveal({ reset: true});
+
+  sr.reveal('.topico-01', {duration: 2000});
+
+  sr.reveal('.topico-02', {duration: 2000});
+
+  sr.reveal('.topico-03', {duration: 2000});
+
+  sr.reveal('.topico-04', {duration: 2000});
