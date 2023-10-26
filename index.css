@@ -252,7 +252,7 @@ footer {
 }
 
 .redes-sociais-rodape a {
-  border: 2px solid var(--azul);
+  border-bottom: 2px solid var(--azul);
 }
 
 .redes-sociais-rodape img{
