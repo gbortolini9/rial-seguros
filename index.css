@@ -116,7 +116,7 @@ a {
 
 main {
   background-image: url(img/rial_back.png);
-  background-position: top;
+  background-position: center;
   display: flex;
   justify-content: center;
 
