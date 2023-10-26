@@ -237,8 +237,9 @@ footer {
 
 .contato {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 
 .contato img {
