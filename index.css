@@ -224,13 +224,25 @@ footer {
   color: var(--verde);
 }
 
-.registro {
-  background-color: var(--azul-escuro);
-  color: white;
+.telefone {
   display: flex;
-  justify-content: center;
-  font-size: 0.9em;
-  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+}
+
+.telefone h3 {
+  padding: 20px 0;
+}
+
+.contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contato img {
+  width: 35px;
 }
 
 .redes-sociais-rodape {
@@ -240,4 +252,13 @@ footer {
 
 .redes-sociais-rodape img{
   width: 35px;
+}
+
+.registro {
+  background-color: var(--azul-escuro);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+  flex-wrap: wrap;
 }
