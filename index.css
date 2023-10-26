@@ -197,26 +197,46 @@ footer {
 
 .rodape {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 80vw;
+  width: 99vw;
   margin: auto;
+  gap: 50px;
+  padding: 50px 0;
 }
 
 .logo-rodape {
-  width: 400px;
+  width: 200px;
 }
 
-.lista-rodape {
+.itens-rodape {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 .a-rodape {
   color: white;
+  text-align: center;
 }
 
 .a-rodape:hover {
   color: var(--verde);
+}
+
+.registro {
+  background-color: var(--azul-escuro);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+.redes-sociais-rodape {
+  display: flex;
+  gap: 20px;
+}
+
+.redes-sociais-rodape img{
+  width: 35px;
 }
