@@ -230,21 +230,21 @@ strong {
 .prod-01-txt {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   padding: 40px;
 }
 
 .prod-02-txt {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   padding: 40px;
 }
 
 .prod-03-txt {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   padding: 40px;
 }
 
@@ -257,13 +257,15 @@ strong {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   text-transform: uppercase;
   font-weight: normal;
 }
 
 .prod-txt {
   text-align: justify;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
 .prod-header img {
@@ -275,7 +277,7 @@ h4 {
   background-image: url(img/seg-vida.jpg);
   background-size: cover;
   background-position: center;
-  width: 40%;
+  width: 30%;
   border-radius: 0 10px 10px 0;
 }
 
@@ -284,7 +286,7 @@ h4 {
   background-size: cover;
   background-position: center;
   border-radius: 0 10px 10px 0;
-  width: 40%;
+  width: 30%;
 }
 
 .prod-03-img {
@@ -292,7 +294,7 @@ h4 {
   background-size: cover;
   background-position: center;
   border-radius: 0 10px 10px 0;
-  width: 40%;
+  width: 30%;
 }
 
 footer {
