@@ -197,46 +197,104 @@ strong {
 
 .produtos {
   display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  gap: 20px;
+  max-width: 700px;
 }
 
-.produtos-coluna-01 {
+.prod-01 {
+  display: flex;
+  background-color: #004AAD;
+  color: white;
+  gap: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 13px #0000005c;
+}
+
+.prod-02 {
+  display: flex;
+  background-color: #7ED957;
+  color: white;
+  gap: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 13px #0000005c;
+}
+
+.prod-03 {
+  display: flex;
+  background-color: #ED4586;
+  color: white;
+  gap: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 13px #0000005c;
+}
+
+.prod-01-txt {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
-  background-color: #BBC0FA;
-  padding: 15px;
-  border: 2px solid var(--azul);
-  border-radius: 20px;
-  margin-top: 50px;
+  width: 60%;
+  padding: 40px;
 }
 
-.circulo-img {
-  background-color: var(--azul);
-  padding: 15px;
-  border-radius: 100%;
+.prod-02-txt {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -70px;
+  flex-direction: column;
+  width: 60%;
+  padding: 40px;
 }
 
-.coluna-01-img {
-  width: 80px;
+.prod-03-txt {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 40px;
+}
+
+.prod-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 h4 {
-  color: var(--azul);
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: normal;
-  margin: 10px 0;
 }
 
-.coluna-txt {
-  font-size: 1em;
+.prod-txt {
   text-align: justify;
+}
+
+.prod-header img {
+  width: 60px;
+}
+
+.prod-01-img {
+  background-image: url(img/seg-vida.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  border-radius: 0 10px 10px 0;
+}
+
+.prod-02-img {
+  background-image: url(img/tele-med.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 10px 10px 0;
+  width: 40%;
+}
+
+.prod-03-img {
+  background-image: url(img/funeral.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 10px 10px 0;
+  width: 40%;
 }
 
 footer {
