@@ -56,3 +56,9 @@ class MobileNavbar {
   sr.reveal('.topico-05', {duration: 2000});
 
   sr.reveal('.line-p', {duration: 3000});
+
+  sr.reveal('.prod-01', {duration: 2000});
+
+  sr.reveal('.prod-02', {duration: 2000});
+
+  sr.reveal('.prod-03', {duration: 2000});
