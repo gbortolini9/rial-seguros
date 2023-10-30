@@ -86,3 +86,14 @@
     flex-wrap: wrap;
   }
 }
+
+@media(max-width: 620px) {
+  .prod-01-img, .prod-02-img, .prod-03-img {
+    display: none;
+  }
+
+  .prod-01-txt, .prod-02-txt, .prod-03-txt {
+    width: 100%;
+    font-size: 1em
+  }
+}
