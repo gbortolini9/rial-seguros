@@ -93,7 +93,42 @@
   }
 
   .prod-01-txt, .prod-02-txt, .prod-03-txt {
-    width: 100%;
+    width: 90%;
     font-size: 0.8em
+  }
+
+  .prod-01, .prod-02, .prod-03 {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .foto-invisivel-01 {
+    display: block;
+    background-image: url(img/seg-vida.jpg);
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .foto-invisivel-02 {
+    display: block;
+    background-image: url(img/tele-med.jpg);
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .foto-invisivel-03 {
+    display: block;
+    background-image: url(img/funeral.jpg);
+    background-position: left;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
   }
 }
