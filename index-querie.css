@@ -87,7 +87,7 @@
   }
 }
 
-@media(max-width: 620px) {
+@media(max-width: 755px) {
   .prod-01-img, .prod-02-img, .prod-03-img {
     display: none;
   }
