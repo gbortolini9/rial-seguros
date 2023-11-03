@@ -88,6 +88,10 @@
     flex-wrap: wrap;
   }
 
+  .itens-contato {
+    width: 100%;
+  }
+
   .formulario-contato {
     width: 100%;
   }
