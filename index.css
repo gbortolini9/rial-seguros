@@ -160,7 +160,8 @@ main {
 
 .conteudo-principal {
   max-width: 1100px;
-  padding: 70px 30px;
+  padding: 70px 10px;
+  margin: 0 20px;
 }
 
 h2 {
@@ -320,9 +321,12 @@ h5 {
 .contato {
   display: flex;
   margin-bottom: 50px;
-  width: 100%;
+  width: 90%;
   justify-content: space-around;
   margin: 30px auto;
+  border: 2px solid var(--azul);
+  border-radius: 10px;
+  padding: 30px;
 }
 
 .itens-contato {
@@ -347,6 +351,11 @@ h5 {
 
 .nome, .replyto, .assunto {
   width: 100%;
+  margin-bottom: 20px;
+}
+
+.assunto {
+  height: 100px;
 }
 
 aside {
