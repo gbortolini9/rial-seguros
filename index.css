@@ -336,14 +336,29 @@ h5 {
   width: 40%;
 }
 
-.itens-contato-h3 {
-  text-transform: uppercase;
-}
-
-.itens-contato-p {
+.item-contato {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
+.itens-contato-p {
+  font-size: 1.1em;
+}
+
+.a-contato-azul {
+  color: var(--azul-escuro);
+  border: 2px solid rgba(255, 255, 255, 0);
+  padding: 2px;
+}
+
+.a-contato-azul:hover {
+  color: var(--azul-escuro);
+  font-weight: normal;
+  border-bottom: 2px solid var(--verde);
+  transition-duration: 0.5s;
+}
 
 .formulario-contato {
   width: 60%;
@@ -356,10 +371,9 @@ h5 {
 .nome, .replyto, .assunto {
   width: 100%;
   margin-bottom: 20px;
-  border-color: var(--azul-escuro);
-  border-style: solid;
-  border-width: 1px;
+  border: none;
   border-radius: 5px;
+  background-color: rgb(235, 234, 234);
 }
 
 .assunto {
