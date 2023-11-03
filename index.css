@@ -323,7 +323,6 @@ h5 {
   display: flex;
   margin-bottom: 50px;
   justify-content: space-around;
-  border: 2px solid var(--azul);
   border-radius: 10px;
   padding: 30px;
   margin-top: 20px;
@@ -350,9 +349,17 @@ h5 {
   width: 60%;
 }
 
+.p-contato {
+  color: var(--azul-escuro);
+}
+
 .nome, .replyto, .assunto {
   width: 100%;
   margin-bottom: 20px;
+  border-color: var(--azul-escuro);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
 }
 
 .assunto {
