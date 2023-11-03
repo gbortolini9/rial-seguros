@@ -94,7 +94,7 @@ a:hover {
     background-attachment: fixed;
     background-repeat: no-repeat;
     height: 80vh;
-    animation: bgcolor infinite 40s;
+    animation: changeBackground 30s infinite;
 }
 
 .line {
@@ -117,14 +117,14 @@ a:hover {
 
 }
 
-@keyframes bgcolor {
-    0% {
+@keyframes changeBackground {
+    0%, 100% {
         background-image: url(img/rial_foto01.jpg);
         background-position: center;
         background-size: cover;
     }
 
-    30% {
+    25% {
         background-image: url(img/rial_foto02.jpg);
         background-position: center;
         background-size: cover;
@@ -136,13 +136,13 @@ a:hover {
         background-size: cover;
     }
 
-    70% {
+    75% {
       background-image: url(img/rial_foto04.jpg);
       background-position: center;
       background-size: cover;
   }
 
-    90% {
+    100% {
         background-image: url(img/rial_foto05.jpg);
         background-position: center;
         background-size: cover;
@@ -515,4 +515,10 @@ footer {
   justify-content: center;
   font-size: 0.9em;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.bortoac-logo {
+  width: 30px;
+  margin-left: 5px;
 }
