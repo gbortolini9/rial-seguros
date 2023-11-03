@@ -119,23 +119,27 @@ a:hover {
 
 @keyframes bgcolor {
     0% {
-        background-image: url(img/jess-zoerb-tvuTAZS_0xk-unsplash\ \(1\).jpg);
-        background-position: bottom;
+        background-image: url(img/rial_foto01.jpg);
+        background-position: center;
+        background-size: cover;
     }
 
     40% {
-        background-image: url(img/everton-vila-AsahNlC0VhQ-unsplash.jpg);
-        background-position: bottom;
+        background-image: url(img/rial_foto02.jpg);
+        background-position: center;
+        background-size: cover;
     }
 
     60% {
-        background-image: url(img/derek-thomson-M1jCmRxO7cY-unsplash.jpg);
+        background-image: url(img/rial_foto03.jpg);
         background-position: center;
+        background-size: cover;
     }
 
     100% {
-        background-image: url(img/kevin-gent-DIZBFTl7c-A-unsplash.jpg);
+        background-image: url(img/rial_foto04.jpg);
         background-position: center;
+        background-size: cover;
     }
 }
 
