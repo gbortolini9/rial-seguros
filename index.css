@@ -313,17 +313,16 @@ h4 {
 h5 {
   font-size: 1.5em;
   margin: auto;
-  color: var(--azul-escuro);
+  color: black;
   font-weight: normal;
 }
 
 .contato {
   display: flex;
   margin-bottom: 50px;
-  width: 90%;
+  width: 100%;
   justify-content: space-around;
-  padding: 20px;
-  margin: auto;
+  margin: 30px auto;
 }
 
 .itens-contato {
