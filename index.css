@@ -93,8 +93,8 @@ a:hover {
     background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 70vh;
-    animation: bgcolor infinite 20s;
+    height: 80vh;
+    animation: bgcolor infinite 40s;
 }
 
 .line {
@@ -124,20 +124,26 @@ a:hover {
         background-size: cover;
     }
 
-    40% {
+    30% {
         background-image: url(img/rial_foto02.jpg);
         background-position: center;
         background-size: cover;
     }
 
-    60% {
+    50% {
         background-image: url(img/rial_foto03.jpg);
         background-position: center;
         background-size: cover;
     }
 
-    100% {
-        background-image: url(img/rial_foto04.jpg);
+    70% {
+      background-image: url(img/rial_foto04.jpg);
+      background-position: center;
+      background-size: cover;
+  }
+
+    90% {
+        background-image: url(img/rial_foto05.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -302,6 +308,10 @@ h4 {
 
 .foto-invisivel-01, .foto-invisivel-02, .foto-invisivel-03 {
   display: none;
+}
+
+button {
+  border: none;
 }
 
 footer {
