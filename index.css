@@ -312,13 +312,42 @@ h4 {
 
 h5 {
   font-size: 1.5em;
-  margin: 30px auto;
-  color: var(--azul);
+  margin: auto;
+  color: var(--azul-escuro);
   font-weight: normal;
 }
 
 .contato {
-  background-color: var(--azul-escuro);
+  display: flex;
+  margin-bottom: 50px;
+  width: 90%;
+  justify-content: space-around;
+  padding: 20px;
+  margin: auto;
+}
+
+.itens-contato {
+  display: flex;
+  flex-direction: column;
+  color: var(--azul-escuro);
+  width: 40%;
+}
+
+.itens-contato-h3 {
+  text-transform: uppercase;
+}
+
+.itens-contato-p {
+  margin-bottom: 20px;
+}
+
+
+.formulario-contato {
+  width: 60%;
+}
+
+.nome, .replyto, .assunto {
+  width: 100%;
 }
 
 aside {
