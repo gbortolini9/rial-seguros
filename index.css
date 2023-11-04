@@ -524,3 +524,9 @@ footer {
   width: 30px;
   margin-left: 5px;
 }
+
+.logo-bortoac {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
