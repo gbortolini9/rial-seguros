@@ -6,7 +6,7 @@
     <title>Rial Seguros</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index-querie.css">
-    <link rel="stylesheet" href="cotacao.css">
+    <link rel="stylesheet" href="cotacao-p-fisica.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
@@ -39,10 +39,39 @@
     <div class="line"><p class="line-p"></p></div>
     <main>
         <div class="conteudo-principal">
-            <div class="cotacao">
-                <a class="a-cotacao" href="cotacao-p-fisica.html">Cotação Pessoa Física</a>
-                <a class="a-cotacao" href="#">Cotação Pessoa Jurídica</a>
-            </div>
+            <h2>Cotação Seguro de Vida <strong>Pessoa Física</strong></h2>
+            <p>"Todos os dados aqui contidos serão respeitados por nossa política de privacidade".</p>
+
+            <form ction="https://formmail.kinghost.net/formmail.cgi" method="POST" autocomplete="on">
+                <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+                <input type="hidden" name="redirect" value="https://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+                <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+                <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+
+                <label for="nome-p-fisica"></label>
+                <input type="text" size="30" name="nome" class="nome-p-fisica" autocomplete="name" placeholder="Nome completo" required>
+
+                <label for="email-p-fisica"></label>
+                <input type="email" size="50" name="email" class="email-p-fisica" autocomplete="E-mail" placeholder="E-mail" required>
+
+                <p>
+                    <label for="nascimento">Nascimento:</label>
+                    <input type="date" name="nascimento" class="nascimento" placeholder="Nascimento" required>
+                </p>
+
+                <label for=""></label>
+                <input type="tel" name="telefone-celular" class="telefone-celular" autocomplete="mobile" placeholder="Telefone">
+
+
+
+
+
+
+
+
+
+
+            </form>
         </div>
     </main>
     <script src="mobile-navbar.js"></script>
