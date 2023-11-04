@@ -7,7 +7,7 @@
 
 .cot-p-fisica a {
     padding: 10px;
-    background-color: var(--verde);
+    background-color: lightgrey;
     border-radius: 5px;
     color: white;
 }
@@ -15,11 +15,12 @@
 .cot-p-fisica a:hover {
     font-weight: normal;
     color: white;
+    background-color: var(--verde);
 }
 
 .cot-p-juridica a{
     padding: 10px;
-    background-color: lightgrey;
+    background-color: var(--verde);
     border-radius: 5px;
     color: white;
 }
