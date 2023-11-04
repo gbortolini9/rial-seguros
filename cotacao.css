@@ -1,0 +1,38 @@
+.conteudo-principal {
+    height: 500px;
+}
+
+.cotacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20%;
+}
+
+.a-cotacao {
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: var(--azul);
+    color: white;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 2px 5px 13px #0000005c;
+}
+
+.a-cotacao:hover {
+    font-weight: normal;
+    color: white;
+    background-color: var(--verde);
+}
+
+@media(max-width: 746px) {
+    .cotacao {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .conteudo-principal {
+        height: 350px;
+    }
+}
