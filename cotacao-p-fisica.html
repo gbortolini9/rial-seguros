@@ -39,14 +39,30 @@
     <div class="line"><p class="line-p"></p></div>
     <main>
         <div class="conteudo-principal">
-            <h2>Cotação Seguro de Vida <strong>Pessoa Física</strong></h2>
-            <p>"Todos os dados aqui contidos serão respeitados por nossa política de privacidade".</p>
-
+            <div class="header-seguro">
+                <h2>Cotação <strong>Pessoa Física</strong></h2>
+            </div>
             <form ation="https://formmail.kinghost.net/formmail.cgi" method="POST" autocomplete="on">
                 <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
                 <input type="hidden" name="redirect" value="https://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
                 <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
                 <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+
+                <div class="escolha-seguros">
+                    <p style="font-size: 0.8em;" class="p-selecao">Selecione o(s) produto(s):</p>
+                    <span class="checkbox-itens">
+                        <input type="checkbox" name="seguro-vida" id="seguro-vida">
+                        <label for="seguro-vida">Seguro de Vida</label>
+                    </span>
+                    <span class="checkbox-itens">
+                        <input type="checkbox" name="telemedicina" id="telemedicina">
+                        <label for="telemedicina">Telemedicina</label>
+                    </span>
+                    <span class="checkbox-itens">
+                        <input type="checkbox" name="auxilio-funeral" id="auxilio-funeral">
+                        <label for="auxilio-funeral">Auxílio Funeral</label>
+                    </span>
+                </div>
 
                 <label for="nome-p-fisica"></label>
                 <input type="text" size="30" name="nome" class="nome-p-fisica" autocomplete="name" placeholder="Nome completo" required>
@@ -120,55 +136,8 @@
 
                 <label for="nacionalidade"></label>
                 <input type="text" name="nacionalidade" class="nacionalidade" placeholder="Nacionalidade" required>
-
-                <p class="p-escolha-seguro">Escolha o(s) seguro(s) desejado:</p>
-
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Seguro de Vida - Morte por Qualquer Causa</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Seguro de Vida e Acidentes Pessoais com Invalidez</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Seguro de Acidentes Pessoais com Invalidez</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Assistência Funeral 24 horas</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Assistência Domiciliar 24 horas</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Assistência ao Veículo 24 Horas</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Assistência Odontológica</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Diária de Internação Hospitalar - DIH</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Cobertura de Incêndio Residencial</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Sorteio Semanal</label>
-                </span>
-                <span class="checkbox-itens">
-                    <input type="checkbox" name="seguro-vida" class="seguro-vida">
-                    <label for="seguro-vida">Desconto em Medicamentos</label>
-                </span>
-
             </form>
+            <p style="margin-top: 30px;">"Todos os dados aqui contidos serão respeitados por nossa política de privacidade".</p>
         </div>
     </main>
     <script src="mobile-navbar.js"></script>

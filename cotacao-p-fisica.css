@@ -1,3 +1,10 @@
+.header-seguro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -12,6 +19,39 @@ input, select {
     border: none;
     border-radius: 5px;
     color: var(--azul-escuro);
+}
+
+/* Estilo do checkbox não marcado */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.134);
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--verde);
+}
+
+.escolha-seguros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 666px) {
+    .escolha-seguros {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .p-selecao {
+        align-self: center;
+    }
 }
 
 .email-nascimento {
@@ -59,27 +99,10 @@ input, select {
     margin-left: 5px;
 }
 
-.p-escolha-seguro {
-    margin: 20px 0;
-}
-
 .checkbox-itens {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Estilo do checkbox não marcado */
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    background-color: #ffffff;
-    border: 1px solid #1b7a30;
-}
 
-/* Estilo do checkbox marcado */
-input[type="checkbox"]:checked {
-    background-color: #00ff37;
-    border: 1px solid #007bff;
-    color: #fff;
-}
