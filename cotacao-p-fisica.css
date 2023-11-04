@@ -1,0 +1,44 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+input, select {
+    padding: 5px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+}
+
+.email-nascimento {
+    display: flex;
+}
+
+.email-p-fisica {
+    width: 70%;
+}
+
+.p-nascimento {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.nascimento {
+    margin-left: 2px;
+}
+
+.cidade-estado {
+    display: flex;
+}
+
+.cidade {
+    width: 80%;
+}
+
+.estado {
+    width: 20%;
+    margin-left: 5px;
+}
