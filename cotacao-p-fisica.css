@@ -3,13 +3,15 @@ form {
     flex-direction: column;
     gap: 10px;
     margin-top: 30px;
+    color: var(--azul-escuro);
 }
 
 input, select {
     padding: 5px;
-    background-color: #cdcdcd;
+    background-color: #dbdbdb;
     border: none;
     border-radius: 5px;
+    color: var(--azul-escuro);
 }
 
 .email-nascimento {
@@ -24,6 +26,7 @@ input, select {
     margin-left: 5px;
     display: flex;
     align-items: center;
+    color: var(--azul-escuro);
 }
 
 .nascimento {
@@ -54,4 +57,8 @@ input, select {
 .peso {
     width: 50%;
     margin-left: 5px;
+}
+
+.p-escolha-seguro {
+    margin: 20px 0;
 }
