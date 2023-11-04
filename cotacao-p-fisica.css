@@ -7,7 +7,7 @@ form {
 
 input, select {
     padding: 5px;
-    background-color: lightgray;
+    background-color: #cdcdcd;
     border: none;
     border-radius: 5px;
 }
@@ -40,5 +40,18 @@ input, select {
 
 .estado {
     width: 20%;
+    margin-left: 5px;
+}
+
+.altura-peso {
+    display: flex;
+}
+
+.altura {
+    width: 50%;
+}
+
+.peso {
+    width: 50%;
     margin-left: 5px;
 }
