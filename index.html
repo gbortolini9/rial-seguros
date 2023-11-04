@@ -171,24 +171,24 @@
                     </div>
                 </div>
                 <div class="formulario-contato">
-                    <form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+                    <form action="http://formmail.kinghost.net/formmail.cgi" method="POST" autocomplete="off"> 
                         <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
                         <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
                         <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
                         <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
                         
                         <p class="p-contato"> 
-                        Nome:<br /> 
-                        <input type="text" size="30" name="nome" class="nome" required> 
+                        <label for="cnome">Nome:</label><br/> 
+                        <input type="text" size="30" name="nome" class="cnome" required> 
                         </p>   
                         
                         <p class="p-contato">
-                        E-mail:<br /> 
-                        <input type="text" size="30" name="replyto" class="replyto" required> 
+                        <label for="creplyto">E-mail:</label><br/> 
+                        <input type="text" size="30" name="replyto" class="creplyto" required> 
                         </p>   
                         
                         <p class="p-contato"> 
-                        Mensagem:<br /> 
+                        <label for="assunto">Mensagem:</label><br/> 
                         <input type="text" size="35" name="comentarios" class="assunto" required> 
                         </p>   
                         
