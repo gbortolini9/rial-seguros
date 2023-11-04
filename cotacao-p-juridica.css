@@ -5,30 +5,55 @@
     margin: -20px 0 40px 0;
 }
 
+.cot-p-juridica {
+    padding: 10px;
+    background-color: var(--verde);
+    border-radius: 5px;
+    color: white;
+}
+
+.cot-p-juridica a {
+    color: white;
+    font-weight: normal;
+    color: white;
+}
+
+.cot-p-juridica a:hover {
+    color: white;
+    font-weight: normal;
+    color: white;
+}
+
+.cot-p-fisica {
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    color: white;
+}
+
 .cot-p-fisica a {
-    padding: 10px;
-    background-color: lightgrey;
-    border-radius: 5px;
     color: white;
-}
-
-.cot-p-fisica a:hover {
     font-weight: normal;
-    color: white;
+}
+
+.cot-p-fisica:hover {
     background-color: var(--verde);
 }
 
-.cot-p-juridica a{
-    padding: 10px;
-    background-color: var(--verde);
-    border-radius: 5px;
-    color: white;
-}
+@media(max-width: 464px) {
+    .cotacoes {
+        gap: 5px;
+    }
 
-.cot-p-juridica:hover a {
-    background-color: var(--verde);
-    font-weight: normal;
-    color: white;
+    .cot-p-fisica {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .cot-p-juridica {
+        padding: 5px;
+        text-align: center;
+    }
 }
 
 .header-seguro {
@@ -106,6 +131,21 @@ input[type="checkbox"]:checked {
     margin-left: 2px;
 }
 
+@media(max-width: 489px) {
+    .email-nascimento {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .email-p-fisica {
+        width: 97%;
+    }
+
+    .nascimento {
+        width: 97%;
+    }
+}
+
 .cidade-estado {
     display: flex;
 }
@@ -117,6 +157,16 @@ input[type="checkbox"]:checked {
 .estado {
     width: 20%;
     margin-left: 5px;
+}
+
+@media(max-width: 471px) {
+    .cidade {
+        width: 65%;
+    }
+    
+    .estado {
+        width: 35%;
+    }
 }
 
 .altura-peso {
@@ -137,5 +187,3 @@ input[type="checkbox"]:checked {
     align-items: center;
     gap: 10px;
 }
-
-
