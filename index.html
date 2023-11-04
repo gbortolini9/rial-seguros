@@ -171,36 +171,32 @@
                     </div>
                 </div>
                 <div class="formulario-contato">
-                    <form action="http://formmail.kinghost.net/formmail.cgi" method="POST" autocomplete="off"> 
+                    <form action="https://formmail.kinghost.net/formmail.cgi" method="POST" autocomplete="on"> 
                         <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
-                        <input type="hidden" name="redirect" value="http://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+                        <input type="hidden" name="redirect" value="https://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
                         <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
                         <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
                         
                         <p class="p-contato"> 
                         <label for="cnome">Nome:</label><br/> 
-                        <input type="text" size="30" name="nome" class="cnome" required> 
+                        <input type="text" size="30" name="nome" class="cnome" autocomplete="name" required> 
                         </p>   
                         
                         <p class="p-contato">
                         <label for="creplyto">E-mail:</label><br/> 
-                        <input type="text" size="30" name="replyto" class="creplyto" required> 
+                        <input type="text" size="30" name="replyto" class="creplyto" autocomplete="email" required> 
                         </p>   
                         
                         <p class="p-contato"> 
                         <label for="assunto">Mensagem:</label><br/> 
-                        <input type="text" size="35" name="comentarios" class="assunto" required> 
+                        <input type="text" size="35" name="comentarios" class="assunto" autocomplete="off" required> 
                         </p>   
                         
-                        <p> 
                         <div class="buttons">
                             <input type="submit" name="BTEnvia" value="Enviar" class="btn-enviar">
                             <input type="reset" name="BTApaga" value="Apagar" class="btn-apagar"> 
                         </div>
-                        </p>
-                        </form>
-                        
-                       </html>
+                    </form>
                 </div>
             </section>
             <h2>Nossas<strong>Publicações</strong></h2>
