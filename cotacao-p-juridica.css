@@ -112,40 +112,6 @@ input[type="checkbox"]:checked {
     }
 }
 
-.email-nascimento {
-    display: flex;
-}
-
-.email-p-fisica {
-    width: 70%;
-}
-
-.p-nascimento {
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
-    color: var(--azul-escuro);
-}
-
-.nascimento {
-    margin-left: 2px;
-}
-
-@media(max-width: 489px) {
-    .email-nascimento {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .email-p-fisica {
-        width: 97%;
-    }
-
-    .nascimento {
-        width: 97%;
-    }
-}
-
 .cidade-estado {
     display: flex;
 }
