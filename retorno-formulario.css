@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --azul: #0318fc;
+    --azul-escuro: #1228A6;
+    --verde: #3ed108;
+}
+
+body {
+    background-image: url(img/rial_back.png);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 10px;
+    flex-wrap: wrap;
+}
+
+.l-rial {
+    width: 100px;
+}
+
+h1 {
+    color: var(--azul-escuro);
+}
+
+.logo-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.links a {
+    background-color: var(--azul);
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.links a:hover {
+    background-color: var(--verde);
+}
