@@ -1,64 +1,37 @@
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = "active";
-  
-      this.handleClick = this.handleClick.bind(this);
-    }
-  
-    animateLinks() {
-      this.navLinks.forEach((link, index) => {
-        link.style.animation
-          ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 7 + 0.3
-            }s`);
-      });
-    }
-  
-    handleClick() {
-      this.navList.classList.toggle(this.activeClass);
-      this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
-    }
-  
-    addClickEvent() {
-      this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-  
-    init() {
-      if (this.mobileMenu) {
-        this.addClickEvent();
-      }
-      return this;
-    }
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
   }
-  
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-  );
-  mobileNavbar.init();
+}
 
-  window.sr = ScrollReveal({ reset: true});
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
-  sr.reveal('.topico-01', {duration: 2000});
+window.sr = ScrollReveal({ reset: true});
 
-  sr.reveal('.topico-02', {duration: 2000});
+sr.reveal('.topico-01', {duration: 2000});
 
-  sr.reveal('.topico-03', {duration: 2000});
+sr.reveal('.topico-02', {duration: 2000});
 
-  sr.reveal('.topico-04', {duration: 2000});
+sr.reveal('.topico-03', {duration: 2000});
 
-  sr.reveal('.topico-05', {duration: 2000});
+sr.reveal('.topico-04', {duration: 2000});
 
-  sr.reveal('.line-p', {duration: 3000});
+sr.reveal('.topico-05', {duration: 2000});
 
-  sr.reveal('.prod-01', {duration: 1000});
+sr.reveal('.line-p', {duration: 3000});
 
-  sr.reveal('.prod-02', {duration: 1000});
+sr.reveal('.prod-01', {duration: 1000});
 
-  sr.reveal('.prod-03', {duration: 1000});
+sr.reveal('.prod-02', {duration: 1000});
+
+sr.reveal('.prod-03', {duration: 1000});

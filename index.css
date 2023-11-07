@@ -45,6 +45,10 @@ body {
   transition-duration: 0.5s;
 }
 
+.logo {
+  width: 300px;
+}
+
 a {
     color: var(--verde);
     text-decoration: none;
@@ -55,43 +59,94 @@ a:hover {
   font-weight: bold;
 }
   
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    margin: auto;
-    max-width: 1800px;
-  }
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .logo {
-    width: 300px;
-    padding: 40px;
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+
+}
+
+#nav {
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    right: 0px;
+    background: rgba(255, 255, 255, 0.945);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
   }
-  
-  .nav-list {
-    list-style: none;
+  #nav.active #menu {
+    height: 280px;
+    visibility: visible;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
     display: flex;
-  }
-  
-  .nav-list li {
-    letter-spacing: 1px;
-    margin-left: 10px;
-    margin-right: 20px;
-  }
-  
-  .mobile-menu {
-    display: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
     cursor: pointer;
+    gap: 0.5rem;
   }
-  
-  .mobile-menu div {
-    width: 32px;
+  #hamburger {
+    border-top: 2px solid;
+    width: 30px;
+    color: var(--verde);
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 30px;
     height: 2px;
-    background: var(--verde);
-    margin: 8px;
+    background: currentColor;
+    margin-top: 5px;
     transition: 0.3s;
+    position: relative;
   }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
 
 .banner {
     background-position: bottom;
