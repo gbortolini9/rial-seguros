@@ -18,6 +18,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .topo-redes-sociais {
   width: 100%;
   background-color: white;
@@ -81,71 +85,140 @@ a:hover {
 
 #btn-mobile {
   display: none;
-
 }
 
 #nav {
   margin-top: 0;
 }
 
-.banner {
-    background-position: bottom;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 80vh;
-    animation: changeBackground 30s infinite;
-}
-
 .line {
-    background-image: linear-gradient(to right, var(--azul), var(--azul-escuro) );
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    font-size: 1em;
-    margin-top: 10px;
+  background-image: linear-gradient(to right, var(--azul), var(--azul-escuro) );
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-size: 1em;
+  margin-top: 10px;
 }
 
-.banner h1 {
-   text-align: center;
-   color: white;
-   margin-top: 60px;
-   text-shadow: 2px 4px 6px #000000b8;
-   font-size: 2.1em;
-
+section.slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 700px;
+  padding: 0 !important;
+  overflow: hidden;
 }
 
-@keyframes changeBackground {
-    0%, 100% {
-        background-image: url(img/rial_foto01.jpg);
-        background-position: center;
-        background-size: cover;
-    }
+.slider-content {
+  width: 500%;
+  height: 70vh;
+  display: flex;
+}
 
-    25% {
-        background-image: url(img/rial_foto02.jpg);
-        background-position: center;
-        background-size: cover;
-    }
+.slider-content input {
+  display: none;
+}
 
-    50% {
-        background-image: url(img/rial_foto03.jpg);
-        background-position: center;
-        background-size: cover;
-    }
+.slide-box {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 2s;
+}
 
-    75% {
-      background-image: url(img/rial_foto04.jpg);
-      background-position: center;
-      background-size: cover;
-  }
+.slide-box img {
+  width: 100%;
+}
 
-    100% {
-        background-image: url(img/rial_foto05.jpg);
-        background-position: center;
-        background-size: cover;
-    }
+.nav-manual, .nav-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 65vh;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.145);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+  background-color: var(--verde);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5 {
+  background-color: var(--azul-escuro);
+}
+
+#radio1:checked ~ .primeiro {
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .primeiro {
+  margin-left: -75%;
+}
+
+#radio5:checked ~ .primeiro {
+  margin-left: -100%;
+}
+
+.primeiro {
+  background-image: url(img/rial_foto01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.segundo {
+  background-image: url(img/rial_foto02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.terceiro {
+  background-image: url(img/rial_foto03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.quarto {
+  background-image: url(img/rial_foto04.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.quinto {
+  background-image: url(img/rial_foto05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 main {
@@ -159,7 +232,7 @@ main {
 
 .conteudo-principal {
   max-width: 1100px;
-  padding: 70px 10px;
+  padding: 0px 10px;
   margin: 0 20px;
 }
 
@@ -438,6 +511,7 @@ margin-top: 20px;
 
 footer {
   background-image: linear-gradient(to right, var(--azul-escuro), var(--azul));
+  margin-top: 50px;
 }
 
 .rodape {
@@ -529,3 +603,9 @@ footer {
   align-items: center;
   margin-left: 5px;
 }
+
+.separacao {
+  margin: 50px 0;
+  visibility: hidden;
+}
+
