@@ -1,4 +1,9 @@
 @media (max-width: 850px) {
+  #header {
+    padding: 0 5px;
+    margin: 10px 0;
+  }
+  
   .logo {
     width: 250px;
   }
