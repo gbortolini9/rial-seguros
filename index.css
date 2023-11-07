@@ -123,6 +123,7 @@ section.slider {
 .slide-box {
   width: 25%;
   height: 70vh;
+  transition: 0.5s;
 }
 
 .nav-manual, .nav-auto {
