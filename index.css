@@ -428,6 +428,7 @@ h5 {
 
 .cnome, .creplyto, .assunto {
   width: 100%;
+  padding: 5px;
   margin-bottom: 20px;
   border: none;
   border-radius: 5px;
@@ -442,6 +443,7 @@ h5 {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .btn-enviar {
