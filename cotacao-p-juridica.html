@@ -76,66 +76,34 @@
                 <label for="nome-contato"></label>
                 <input type="text" size="50" name="nome-contato" class="nome-contato" autocomplete="name" placeholder="Nome do contato" required>
 
-                <label for="telefone-celular"></label>
-                <input type="tel" name="telefone-celular" class="telefone-celular" autocomplete="mobile" placeholder="Telefone" required>
+                <label for="numero-segurados"></label>
+                <input type="number" name="numero-segurados" class="numero-segurados" placeholder="Número de pessoas seguradas" required>
 
-                <div class="cidade-estado">
-                    <label for="cidade"></label>
-                    <input type="text" name="cidade" class="cidade" placeholder="Cidade" required>
+                <label for="cobertura-existente"></label>
+                <input type="text" name="cobertura-existente" class="cobertura-existente" placeholder="Coberturas existentes">
 
-                    <label for="estado"></label>
-                    <select type="text" name="estado" class="estado" required>
-                        <option value="AC">Estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </div>
-
-                <label for="sexo"></label>
-                <select type="text" name="sexo" class="sexo" required>
-                    <option value="S">Sexo</option>
-                    <option value="M">Masculino</option>
-                    <option value="F">Feminino</option>
+                <label for="forma-capital-segurado"></label>
+                <select type="text" name="forma-capital-segurado" class="forma-capital-segurado" required>
+                    <option value="FCS">Forma de capital segurado</option>
+                    <option value="CI">Capitais individuais</option>
+                    <option value="CU">Capital único</option>
+                    <option value="MS">Múltiplo Salarial</option>
                 </select>
 
-                <div class="altura-peso">
-                    <label for="altura"></label>
-                    <input type="number" name="altura" class="altura" step="0.01" placeholder="Altura" required>
+                <label for="capital-medio"></label>
+                <input type="text" name="capital-medio" class="capital-medio" placeholder="Capital individual médio">
 
-                    <label for="peso"></label>
-                    <input type="number" name="peso" class="peso" placeholder="Peso" required>
-                </div>
+                <label for="capital-unico"></label>
+                <input type="text" name="capital-unico" class="capital-unico" placeholder="Capital único">
 
-                <label for="ocupacao"></label>
-                <input type="text" name="ocupacao" class="ocupacao" placeholder="Ocupação principal" required>
+                <label for="m-salarial"></label>
+                <input type="text" name="m-salarial" class="m-salarial" placeholder="Múltiplo salarial">
 
-                <label for="nacionalidade"></label>
-                <input type="text" name="nacionalidade" class="nacionalidade" placeholder="Nacionalidade" required>
+                <label for="idade-grupo-media"></label>
+                <input type="number" name="idade-grupo-media" class="idade-grupo-media" placeholder="Média de idade do grupo">
+
+                <label for="fatura"></label>
+                <input type="number" name="fatura" class="fatura" placeholder="Fatura/Pagamento Total Mensal">
 
                 <div class="buttons">
                     <input type="submit" name="BTEnvia" value="Enviar" class="btn-enviar">

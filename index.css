@@ -70,6 +70,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1800px;
+  margin: auto;
 }
 
 #menu {
@@ -505,7 +507,7 @@ footer {
   max-width: 1800px;
   gap: 50px;
   padding: 50px 0px;
-  margin: 0;
+  margin: auto;
 }
 
 .logo-rodape {

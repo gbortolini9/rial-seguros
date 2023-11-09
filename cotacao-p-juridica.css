@@ -112,41 +112,11 @@ input[type="checkbox"]:checked {
     }
 }
 
-.cidade-estado {
-    display: flex;
+.cobertura-existente {
+    height: 100px;
 }
 
-.cidade {
-    width: 80%;
-}
 
-.estado {
-    width: 20%;
-    margin-left: 5px;
-}
-
-@media(max-width: 471px) {
-    .cidade {
-        width: 65%;
-    }
-    
-    .estado {
-        width: 35%;
-    }
-}
-
-.altura-peso {
-    display: flex;
-}
-
-.altura {
-    width: 50%;
-}
-
-.peso {
-    width: 50%;
-    margin-left: 5px;
-}
 
 .checkbox-itens {
     display: flex;
