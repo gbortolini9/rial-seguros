@@ -73,7 +73,7 @@ form {
 }
 
 input, select {
-    padding: 5px;
+    padding: 10px;
     background-color: #dbdbdb;
     border: none;
     border-radius: 5px;

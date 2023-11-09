@@ -1,0 +1,50 @@
+input.nascimento {
+    margin-left: 10px;
+}
+
+.nome-idade {
+    display: flex;
+}
+
+.nome-p-fisica {
+    width: 100%;
+}
+
+.idade-sexo {
+    display: flex;
+    gap: 5px;
+}
+
+.idade {
+    width: 100%;
+}
+
+.sexo-candidato {
+    width: 100%;
+}
+
+.rg-expedicao {
+    display: flex;
+    gap: 5px;
+}
+
+.rg {
+    width: 100%;
+}
+
+.expedicao {
+    width: 100%;
+}
+
+.cnh-categoria {
+    display: flex;
+    gap: 5px;
+}
+
+.cnh {
+    width: 100%;
+}
+
+.categoria {
+    width: 100%;
+}

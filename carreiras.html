@@ -6,8 +6,11 @@
     <title>Rial Seguros</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="index-querie.css">
+    <link rel="stylesheet" href="cotacao-p-fisica.css">
+    <link rel="stylesheet" href="carreiras.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="mobile-navbar.js" defer></script>
 </head>
 <body>
     <div class="topo-redes-sociais">
@@ -33,10 +36,92 @@
             </ul>
           </nav>
     </header>
+    <div class="line"><p class="line-p">Especialistas em seguros de vida</p></div>
+    <div class="separacao"></div>
     <main>
-        
+        <div class="conteudo-principal">
+            <div class="header-seguro">
+                <h2>Trabalhe <strong>Conosco</strong></h2>
+            </div>
+            <form ation="https://formmail.kinghost.net/formmail.cgi" method="POST" autocomplete="on">
+                <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
+                <input type="hidden" name="redirect" value="https://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
+                <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
+                <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
+
+                <div class="nome-idade">
+                    <label for="nome-p-fisica"></label>
+                    <input type="text" size="30" name="nome" class="nome-p-fisica" autocomplete="name" placeholder="Nome completo" required>
+                    <p class="p-nascimento">
+                        <label for="nascimento">Nascimento:</label>
+                        <input type="date" name="nascimento" class="nascimento" placeholder="Nascimento" required>
+                    </p>
+                </div>
+
+                <div class="idade-sexo">
+                    <label for="idade"></label>
+                    <input type="number" name="idade" class="idade" placeholder="Idade">
+                    <label for="sexo-candidato"></label>
+                    <select type="text" name="sexo-candidato" class="sexo-candidato" required>
+                        <option value="S">Sexo</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                    </select>
+                </div>
+
+                <label for="estado-civil"></label>
+                <select type="text" name="estado-civil" class="estado-civil" required>
+                    <option value="EC">Estado Civil</option>
+                    <option value="S">Solteiro(a)</option>
+                    <option value="C">Casado(a)</option>
+                    <option value="V">Viúvo(a)</option>
+                    <option value="D">Divorciado(a)</option>
+                </select>
+
+                <label for="telefone-celular"></label>
+                <input type="tel" name="telefone-celular" class="telefone-celular" autocomplete="mobile" placeholder="Telefone" required>
+
+                <label for="naturalidade"></label>
+                <input type="text" name="naturalidade" class="naturalidade" placeholder="Naturalidade" required>
+
+                <label for="nacionalidade"></label>
+                <input type="text" name="nacionalidade" class="nacionalidade" placeholder="Nacionalidade" required>
+
+                <div class="rg-expedicao">
+                    <label for="rg"></label>
+                    <input type="number" name="rg" class="rg" placeholder="RG" required>
+
+                    <label for="expedicao"></label>
+                    <input type="text" name="expedicao" class="expedicao" placeholder="Expedição" required>
+                </div>
+
+                <div class="cnh-categoria">
+                    <label for="cnh"></label>
+                    <input type="number" name="cnh" class="cnh" placeholder="CNH" required>
+                    <label for="categoria"></label>
+                    <input type="text" name="categoria" class="categoria" placeholder="Categoria" required>
+                </div>
+
+                <label for="email"></label>
+                <input type="email" name="email" class="email" autocomplete="E-mail" placeholder="E-mail" required>
+
+
+
+
+
+
+
+
+
+
+                <div class="buttons">
+                    <input type="submit" name="BTEnvia" value="Enviar" class="btn-enviar">
+                    <input type="reset" name="BTApaga" value="Apagar" class="btn-apagar"> 
+                </div>
+            </form>
+            <p style="margin-top: 30px;">"Todos os dados aqui contidos serão respeitados por nossa política de privacidade".</p>
+        </div>
     </main>
-    <script src="mobile-navbar.js"></script>
     <footer>
         <div class="rodape">
             <img class="logo-rodape" src="img/rial_logo_.png" alt="Logo Rial">
