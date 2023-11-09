@@ -116,8 +116,6 @@ input[type="checkbox"]:checked {
     height: 100px;
 }
 
-
-
 .checkbox-itens {
     display: flex;
     align-items: center;
