@@ -67,6 +67,31 @@
   }
 }
 
+@media(max-width: 600px) {
+
+  .slide-box {
+    width: 25%;
+    height: 50vh;
+    transition: 1s;
+  }
+
+  .nav-manual, .nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 45vh;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
 @media(max-width: 860px) {
   .topico-02, .topico-04 {
     flex-wrap: wrap;
