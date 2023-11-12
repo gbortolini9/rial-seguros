@@ -254,7 +254,6 @@ strong {
   display: flex;
   align-items: center;
   gap: 20px;
-  padding-top: 40px;
 }
 
 .img-conteudo-principal {
@@ -269,7 +268,7 @@ strong {
   display: flex;
   flex-direction: column;
   margin: 30px auto;
-  gap: 30px;
+  gap: 50px;
 }
 
 .prod-01 {
