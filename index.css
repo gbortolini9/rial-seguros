@@ -440,6 +440,18 @@ h5 {
   height: 120px;
 }
 
+textarea {
+  padding: 10px;
+  background-color: #dbdbdb;
+  border: none;
+  border-radius: 5px;
+  color: var(--azul-escuro);
+}
+
+textarea {
+  resize: none;
+}
+
 .buttons {
   display: flex;
   width: 100%;
