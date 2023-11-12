@@ -72,12 +72,16 @@ form {
     text-align: center;
 }
 
-input, select {
+input, select, textarea {
     padding: 10px;
     background-color: #dbdbdb;
     border: none;
     border-radius: 5px;
     color: var(--azul-escuro);
+}
+
+textarea {
+    resize: none;
 }
 
 /* Estilo do checkbox não marcado */
@@ -96,6 +100,9 @@ input[type="checkbox"]:checked {
 
 .escolha-seguros {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 @media(max-width: 666px) {
