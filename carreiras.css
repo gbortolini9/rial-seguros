@@ -19,7 +19,6 @@ input.nascimento {
 
 .idade-sexo {
     display: flex;
-    gap: 5px;
 }
 
 .idade {
@@ -28,11 +27,11 @@ input.nascimento {
 
 .sexo-candidato {
     width: 100%;
+    margin-left: 10px;
 }
 
 .rg-expedicao {
     display: flex;
-    gap: 5px;
 }
 
 .rg {
@@ -41,11 +40,11 @@ input.nascimento {
 
 .expedicao {
     width: 100%;
+    margin-left: 10px;
 }
 
 .cnh-categoria {
     display: flex;
-    gap: 5px;
 }
 
 .cnh {
@@ -54,4 +53,5 @@ input.nascimento {
 
 .categoria {
     width: 100%;
+    margin-left: 10px;
 }

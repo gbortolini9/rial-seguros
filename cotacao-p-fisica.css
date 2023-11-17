@@ -88,10 +88,31 @@ input[type="checkbox"] {
     height: 20px;
     border: 1px solid rgba(128, 128, 128, 0.134);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 18px;
+    color: white;
+    display: none;
+}
+
+input[type="checkbox"]:hover {
+    background-color: rgba(128, 128, 128, 0.568);
+}
+
+input[type="checkbox"]:checked { 
     background-color: var(--verde);
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
 }
 
 .escolha-seguros {
