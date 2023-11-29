@@ -14,10 +14,10 @@ if (isset($_POST['BTEnvia'])) {
     $mail = new PHPMailer(true); 
 
     $enviaFormularioParaNome = 'Rial Seguros';
-    $enviaFormularioParaEmail = 'contato@rialseguros.com.br';
+    $enviaFormularioParaEmail = 'guibortolini9@gmail.com';
     $caixaPostalServidorNome = 'Formulário de contato | Rial Seguros';
-    $caixaPostalServidorEmail = 'contato@rialseguros.com.br';
-    $caixaPostalServidorSenha = 'Corretora864%';
+    $caixaPostalServidorEmail = 'guibortolini9@gmail.com';
+    $caixaPostalServidorSenha = 'dbhnhwitinqfjofl';
 
     $remetenteNome  = $_POST['nome'];
     $remetenteEmail = $_POST['replyto'];
