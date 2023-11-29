@@ -13,11 +13,11 @@ if (isset($_POST['BTEnvia'])) {
     //Create an instance; passing `true` enables exceptions
     $mail = new PHPMailer(true); 
 
-    $enviaFormularioParaNome = 'Teste';
-    $enviaFormularioParaEmail = 'guibortolini9@gmail.com';
+    $enviaFormularioParaNome = 'Rial Seguros';
+    $enviaFormularioParaEmail = 'contato@rialseguros.com.br';
     $caixaPostalServidorNome = 'Formulário de contato | Rial Seguros';
-    $caixaPostalServidorEmail = 'guibortolini9@gmail.com';
-    $caixaPostalServidorSenha = 'dbhnhwitinqfjofl';
+    $caixaPostalServidorEmail = 'contato@rialseguros.com.br';
+    $caixaPostalServidorSenha = 'Corretora864%';
 
     $remetenteNome  = $_POST['nome'];
     $remetenteEmail = $_POST['replyto'];
@@ -54,6 +54,5 @@ if (isset($_POST['BTEnvia'])) {
         exit(); // Certifique-se de que o código não continue a ser executado após o redirecionamento
     }    
 }
-
 ?>
 
