@@ -6,7 +6,7 @@
 
     $para = "guibortolini9@gmail.com";
 
-    $cabeca = "From: karyne1402@gmail.com"."\n"."Reply-to: ".$replyto."\n"."X=Mailer:PHP/".phpversion();
+    $cabeca = "Reply-to: ".$replyto."\n"."X=Mailer:PHP/".phpversion();
 
     if(mail($para,$assunto,$cabeca)){
         echo("E-mail enviado com sucesso!");
