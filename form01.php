@@ -5,7 +5,7 @@
     $assunto = $_POST['assunto'];
 
     $para = "guibortolini9@gmail.com";
-    $titulo = "Formulário de Contato | Rial Seguros"
+    $titulo = "Formulário de Contato | Rial Seguros";
 
     $corpo = "Nome: ".$nome."\n"."Email: ".$replyto."\n"."Assunto: ".$assunto;
 
