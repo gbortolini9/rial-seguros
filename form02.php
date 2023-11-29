@@ -15,7 +15,7 @@ if (isset($_POST['BTEnvia'])) {
 
     $enviaFormularioParaNome = 'Teste';
     $enviaFormularioParaEmail = 'guibortolini9@gmail.com';
-    $caixaPostalServidorNome = 'WebSite | Formulário';
+    $caixaPostalServidorNome = 'Formulário de contato | Rial Seguros';
     $caixaPostalServidorEmail = 'guibortolini9@gmail.com';
     $caixaPostalServidorSenha = 'dbhnhwitinqfjofl';
 
@@ -23,11 +23,11 @@ if (isset($_POST['BTEnvia'])) {
     $remetenteEmail = $_POST['replyto'];
     $assunto  = $_POST['assunto'];
 
-    $mensagemConcatenada = 'Formulário gerado via website'.'<br/>';
-    $mensagemConcatenada .= '-------------------------------<br/><br/>';
+    $mensagemConcatenada = 'Formulário encaminhado via Rial Seguros'.'<br/>';
+    $mensagemConcatenada .= '------------------------------------------------------<br/><br/>';
     $mensagemConcatenada .= 'Nome: '.$remetenteNome.'<br/>';
     $mensagemConcatenada .= 'E-mail: '.$remetenteEmail.'<br/>';
-    $mensagemConcatenada .= '-------------------------------<br/><br/>';
+    $mensagemConcatenada .= '------------------------------------------------------<br/><br/>';
     $mensagemConcatenada .= 'Mensagem: "'.$assunto.'"<br/>';
 
     $mail = new PHPMailer();
@@ -46,15 +46,13 @@ if (isset($_POST['BTEnvia'])) {
     $mail->Body  = utf8_decode($mensagemConcatenada);
     $mail->AddAddress($enviaFormularioParaEmail,utf8_decode($enviaFormularioParaNome));
 
-    if(!$mail->Send()){
-
-    $mensagemRetorno = 'Erro ao enviar formulário: '. print($mail->ErrorInfo);
-
-    }else{
-
-    $mensagemRetorno = 'Formulário enviado com sucesso!!!!';
-
-    }
+    if (!$mail->Send()) {
+        $mensagemRetorno = 'Erro ao enviar o formulário: ' . $mail->ErrorInfo;
+    } else {
+        // Redirecionamento para a página de sucesso
+        header("Location: retorno-formulario.html");
+        exit(); // Certifique-se de que o código não continue a ser executado após o redirecionamento
+    }    
 }
 
 ?>
