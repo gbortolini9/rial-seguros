@@ -42,21 +42,21 @@ if (isset($_POST['BTEnvia'])) {
         $seguroVida  = $_POST['seguro-vida'];
         $teleMedicina = $_POST['telemedicina'];
         $auxilioFuneral = $_POST['auxilio-funeral'];
-        $nomePfisica = $_POST['nome'];
-        $emailPfisica = $_POST['email'];
-        $nascimento = $_POST['nascimento'];
-        $telefoneCelular = $_POST['telefone-celular'];
-        $cidade = $_POST['cidade'];
-        $estado = $_POST['estado'];
-        $sexo = $_POST['sexo'];
-        $altura = $_POST['altura'];
-        $peso = $_POST['peso'];
-        $ocupacao = $_POST['ocupacao'];
-        $nacionalidade = $_POST['nacionalidade'];
+        $nomeEmpresa = $_POST['nome-empresa'];
+        $emailEmpresa = $_POST['email-empresa'];
+        $nomeContato = $_POST['nome-contato'];
+        $numeroSegurados = $_POST['numero-segurados'];
+        $coberturaExistente = $_POST['cobertura-existente'];
+        $formaCapitalSegurado = $_POST['forma-capital-segurado'];
+        $capitalMedio = $_POST['capital-medio'];
+        $capitalUnico = $_POST['capital-unico'];
+        $multiploSalarial = $_POST['m-salarial'];
+        $idadeMedia = $_POST['idade-grupo-media'];
+        $fatura = $_POST['fatura'];
 
         //Content
         $mail->isHTML(true);                                        //Set email format to HTML
-        $mail->Subject = 'Solicitacao de Cotacao Pessoa Fisica | Rial Seguros';
+        $mail->Subject = 'Solicitacao de Cotacao Pessoa Juridica | Rial Seguros';
     
         $mensagemConcatenada = 'Formulário encaminhado via Rial Seguros'.'<br/>';
         $mensagemConcatenada .= '------------------------------------------------------<br/><br/>';
@@ -65,17 +65,17 @@ if (isset($_POST['BTEnvia'])) {
         $mensagemConcatenada .= 'Telemedicina: '.$teleMedicina.'<br/>';
         $mensagemConcatenada .= 'Auxílio Funeral: '.$auxilioFuneral.'<br/>';
         $mensagemConcatenada .= '------------------------------------------------------<br/><br/>';
-        $mensagemConcatenada .= 'Nome: '.$nomePfisica.'<br/>';
-        $mensagemConcatenada .= 'E-mail: '.$emailPfisica.'<br/>';
-        $mensagemConcatenada .= 'Data de Nascimento: '.$nascimento.'<br/>';
-        $mensagemConcatenada .= 'Telefone/Celular: '.$telefoneCelular.'<br/>';
-        $mensagemConcatenada .= 'Cidade: '.$cidade.'<br/>';
-        $mensagemConcatenada .= 'Estado: '.$estado.'<br/>';
-        $mensagemConcatenada .= 'Sexo: '.$sexo.'<br/>';
-        $mensagemConcatenada .= 'Altura: '.$altura.'<br/>';
-        $mensagemConcatenada .= 'Peso: '.$peso.'<br/>';
-        $mensagemConcatenada .= 'Ocupação: '.$ocupacao.'<br/>';
-        $mensagemConcatenada .= 'Nacionalidade: '.$nacionalidade.'<br/>';
+        $mensagemConcatenada .= 'Empresa: '.$nomeEmpresa.'<br/>';
+        $mensagemConcatenada .= 'E-mail da Empresa: '.$emailEmpresa.'<br/>';
+        $mensagemConcatenada .= 'Nome do Contato: '.$nomeContato.'<br/>';
+        $mensagemConcatenada .= 'Número de Segurados: '.$numeroSegurados.'<br/>';
+        $mensagemConcatenada .= 'Cobertura Existente: '.$coberturaExistente.'<br/>';
+        $mensagemConcatenada .= 'Forma de Capital Segurado: '.$formaCapitalSegurado.'<br/>';
+        $mensagemConcatenada .= 'Capital Médio: '.$capitalMedio.'<br/>';
+        $mensagemConcatenada .= 'Capital Único: '.$capitalUnico.'<br/>';
+        $mensagemConcatenada .= 'Múltiplo Salarial: '.$multiploSalarial.'<br/>';
+        $mensagemConcatenada .= 'Média de Idade do Grupo: '.$idadeMedia.'<br/>';
+        $mensagemConcatenada .= 'Fatura/Pagamento Total Mensal: '.$fatura.'<br/>';
 
         $body = utf8_decode($mensagemConcatenada);
 

@@ -8,16 +8,17 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
-if (isset($_POST['BTEnvia'])) {
+if (isset($_POST['BTEnvia']) && $_SERVER["REQUEST_METHOD"] === "POST" && isset($_FILES["arquivo"])) {
+    $arquivoTemporario = $_FILES["arquivo"]["tmp_name"];
+    $nomeDoArquivo = $_FILES["arquivo"]["name"];
 
     //Create an instance; passing `true` enables exceptions
     $mail = new PHPMailer(true);
 
     try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'smtp.gmail.com';                      //Set the SMTP server to send through
+        $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = 'rialcorretoraemail@gmail.com';         //SMTP username
         $mail->Password   = 'emnwalwalgjmioex';                     //SMTP password
@@ -38,44 +39,51 @@ if (isset($_POST['BTEnvia'])) {
         $mail->addAddress('contato@rialseguros.com.br');                    //Name is optional
         $mail->addReplyTo('contato@rialseguros.com.br', 'Information');
         $mail->addCC('rialcorretoraemail@gmail.com');
+        $mail->addAttachment($arquivoTemporario, $nomeDoArquivo);
 
-        $seguroVida  = $_POST['seguro-vida'];
-        $teleMedicina = $_POST['telemedicina'];
-        $auxilioFuneral = $_POST['auxilio-funeral'];
-        $nomePfisica = $_POST['nome'];
-        $emailPfisica = $_POST['email'];
+        $nome  = $_POST['nome'];
         $nascimento = $_POST['nascimento'];
-        $telefoneCelular = $_POST['telefone-celular'];
-        $cidade = $_POST['cidade'];
-        $estado = $_POST['estado'];
-        $sexo = $_POST['sexo'];
-        $altura = $_POST['altura'];
+        $idade = $_POST['idade'];
+        $sexoCandidato= $_POST['sexo-candidato'];
+        $estadoCivil = $_POST['estado-civil'];
+        $telefone = $_POST['telefone-celular'];
+        $naturalidade = $_POST['naturalidade'];
+        $nacionalidade = $_POST['nacionalidade'];
+        $rg = $_POST['rg'];
+        $expedicao = $_POST['expedicao'];
+        $cnh = $_POST['cnh'];
         $peso = $_POST['peso'];
         $ocupacao = $_POST['ocupacao'];
         $nacionalidade = $_POST['nacionalidade'];
+        $categoria = $_POST['categoria'];
+        $email = $_POST['email'];
+        $linkedin = $_POST['linkedin'];
+        
+        $curriculoAnexo = $_FILES['arquivo'];
 
         //Content
         $mail->isHTML(true);                                        //Set email format to HTML
-        $mail->Subject = 'Solicitacao de Cotacao Pessoa Fisica | Rial Seguros';
+        $mail->Subject = 'Envio de Curriculo | Rial Seguros';
     
-        $mensagemConcatenada = 'Formulário encaminhado via Rial Seguros'.'<br/>';
+        $mensagemConcatenada = 'Formulário encaminhado via Rial Seguros | Trabalhe Conosco'.'<br/>';
         $mensagemConcatenada .= '------------------------------------------------------<br/><br/>';
-        $mensagemConcatenada .= 'Seguro(s) Escolhido(s): (Obs.: Considerar "on" como as opções escolhidas)<br/><br/>';
-        $mensagemConcatenada .= 'Seguro de vida: '.$seguroVida.'<br/>';
-        $mensagemConcatenada .= 'Telemedicina: '.$teleMedicina.'<br/>';
-        $mensagemConcatenada .= 'Auxílio Funeral: '.$auxilioFuneral.'<br/>';
-        $mensagemConcatenada .= '------------------------------------------------------<br/><br/>';
-        $mensagemConcatenada .= 'Nome: '.$nomePfisica.'<br/>';
-        $mensagemConcatenada .= 'E-mail: '.$emailPfisica.'<br/>';
+        $mensagemConcatenada .= 'Nome: '.$nome.'<br/>';
         $mensagemConcatenada .= 'Data de Nascimento: '.$nascimento.'<br/>';
-        $mensagemConcatenada .= 'Telefone/Celular: '.$telefoneCelular.'<br/>';
-        $mensagemConcatenada .= 'Cidade: '.$cidade.'<br/>';
-        $mensagemConcatenada .= 'Estado: '.$estado.'<br/>';
-        $mensagemConcatenada .= 'Sexo: '.$sexo.'<br/>';
-        $mensagemConcatenada .= 'Altura: '.$altura.'<br/>';
-        $mensagemConcatenada .= 'Peso: '.$peso.'<br/>';
-        $mensagemConcatenada .= 'Ocupação: '.$ocupacao.'<br/>';
+        $mensagemConcatenada .= 'Idade: '.$idade.'<br/>';
+        $mensagemConcatenada .= 'Sexo do Candidato: '.$sexoCandidato.'<br/>';
+        $mensagemConcatenada .= 'Estado Civil: '.$estadoCivil.'<br/>';
+        $mensagemConcatenada .= 'Telefone/Celular: '.$telefone.'<br/>';
+        $mensagemConcatenada .= 'Naturalidade: '.$naturalidade.'<br/>';
         $mensagemConcatenada .= 'Nacionalidade: '.$nacionalidade.'<br/>';
+        $mensagemConcatenada .= 'RG: '.$rg.'<br/>';
+        $mensagemConcatenada .= 'Expedição: '.$expedicao.'<br/>';
+        $mensagemConcatenada .= 'CNH: '.$cnh.'<br/>';
+        $mensagemConcatenada .= 'Categoria: '.$categoria.'<br/>';
+        $mensagemConcatenada .= 'Email: '.$email.'<br/>';
+        $mensagemConcatenada .= 'Linkedin: '.$linkedin.'<br/><br/>';
+
+        // Adiciona o conteúdo do currículo como texto no corpo do e-mail
+        $mensagemConcatenada .= 'Currículo foi anexado ao e-mail.';
 
         $body = utf8_decode($mensagemConcatenada);
 

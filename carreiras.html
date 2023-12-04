@@ -44,12 +44,7 @@
             <div class="header-seguro">
                 <h2>Trabalhe <strong>Conosco</strong></h2>
             </div>
-            <form ation="https://formmail.kinghost.net/formmail.cgi" method="POST" autocomplete="on">
-                <input type="hidden" name="recipient" value="testeiseuemail@gmail.com"> <!-- Pode ser qualquer endereço de email -->
-                <input type="hidden" name="redirect" value="https://seudominio"> <!-- Após o envio, o usuário será redirecionado para a página configurada aqui -->
-                <input type="hidden" name="subject" value="teste de assunto">  <!-- Assunto da mensagem -->
-                <input type="hidden" name="email" value="email@doseudominio">   <!-- Deve ser uma conta de email ativa em seu domínio -->
-
+            <form action="carreiras.php" method="POST" autocomplete="on" enctype="multipart/form-data">
                 <div class="nome-idade">
                     <label for="nome-p-fisica"></label>
                     <input type="text" size="30" name="nome" class="nome-p-fisica" autocomplete="name" placeholder="Nome completo" required>
@@ -65,18 +60,18 @@
                     <label for="sexo-candidato"></label>
                     <select type="text" name="sexo-candidato" class="sexo-candidato" required>
                         <option value="S">Sexo</option>
-                        <option value="M">Masculino</option>
-                        <option value="F">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
                     </select>
                 </div>
 
                 <label for="estado-civil"></label>
                 <select type="text" name="estado-civil" class="estado-civil" required>
                     <option value="EC">Estado Civil</option>
-                    <option value="S">Solteiro(a)</option>
-                    <option value="C">Casado(a)</option>
-                    <option value="V">Viúvo(a)</option>
-                    <option value="D">Divorciado(a)</option>
+                    <option value="Solteiro">Solteiro(a)</option>
+                    <option value="Casado">Casado(a)</option>
+                    <option value="Viúvo">Viúvo(a)</option>
+                    <option value="Divorciado">Divorciado(a)</option>
                 </select>
 
                 <label for="telefone-celular"></label>
@@ -112,7 +107,7 @@
                 <p class="p-nascimento"> 
                     Anexe aqui seu currículo:
                     <label for="curriculo"></label>
-                    <input style="margin-left: 5px; width: 100%;" type="file" name="curriculo" class="curriculo" required>
+                    <input style="margin-left: 5px; width: 100%;" type="file" name="arquivo" class="curriculo" required>
                 </p>
 
                 <div class="buttons">
